@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/candy_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:id="@+id/linLay"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_margin="22dp"
+       android:background="#3400ddff"
+       android:gravity="center"
+       android:orientation="horizontal"
+       android:padding="2dp">
+
+
+      <TextView
+          android:id="@+id/highscore"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="High Score: 0"
+          android:textColor="@color/purple"
+          android:textSize="28sp"
+          android:textStyle="bold|normal" />
+
+   </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/linLayer"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_margin="22dp"
+       android:background="#3400ddff"
+       android:gravity="center"
+       android:orientation="horizontal"
+       android:padding="2dp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Score - "
+          android:textColor="@color/purple"
+          android:textSize="28sp"
+          android:textStyle="bold|normal" />
+
+      <TextView
+          android:id="@+id/score"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=" 0 "
+          android:textColor="@color/purple"
+          android:textSize="28sp"
+          android:textStyle="bold|normal" />
+      <TextView
+          android:id="@+id/wrongMoves"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=" Moves: 0"
+          android:textColor="@color/purple"
+          android:textSize="20sp"
+          android:textStyle="bold|normal" />
+
+
+   </LinearLayout>
+
+
+   <LinearLayout
+       android:layout_width="391dp"
+       android:layout_height="501dp"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:orientation="vertical">
+
+      <GridLayout
+          android:id="@+id/board"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:background="#9A607AA3"
+          android:orientation="horizontal" />
+
+
+   </LinearLayout>
+
+   <Button
+       android:id="@+id/exitButton"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       android:layout_marginTop="20dp"
+       android:background="@drawable/round_btn"
+       android:backgroundTint="@color/purple"
+       android:text="Exit"
+       android:textColor="#FFFFFF"
+       android:textColorHighlight="@color/purple"
+       android:textColorLink="@color/purple"
+       android:textSize="20sp"
+       android:textStyle="bold|normal"
+       app:rippleColor="@color/purple"
+       app:strokeColor="@color/purple" />
+
+
+
+</LinearLayout>
